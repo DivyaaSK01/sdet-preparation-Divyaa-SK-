@@ -10,7 +10,6 @@ import openpyxl
 
 
 def print_header():
-    """Prints a formatted report header with system info."""
     print("=" * 70)
     print("SDET ENVIRONMENT VERIFICATION REPORT")
     print("=" * 70)
@@ -21,7 +20,6 @@ def print_header():
     print("=" * 70)
 
 def print_package_versions():
-    """Prints the version numbers of important Python packages."""
     print("\nINSTALLED PACKAGE VERSIONS:")
     print("-" * 40)
     print(f"pytest      : {pytest.__version__}")
