@@ -1,0 +1,94 @@
+{
+  "description": "Sample test user data for testing framework - contains both valid and invalid data using Indian names",
+  "created_at": "2025-07-30T10:00:00.000000",
+  "version": "1.0",
+  "users": [
+    {
+      "name": "Rahul Sharma",
+      "email": "rahul.sharma@example.com",
+      "password": "Rahul@1234",
+      "age": 29,
+      "role": "user"
+    },
+    {
+      "name": "Priya Menon",
+      "email": "priya.menon@test.org",
+      "password": "PriyaSecure456#",
+      "age": 34,
+      "role": "admin"
+    },
+    {
+      "name": "Arjun Patel",
+      "email": "arjun.patel@demo.net",
+      "password": "Arjun_2024$",
+      "age": 40,
+      "role": "moderator"
+    },
+    {
+      "name": "Sneha Iyer",
+      "email": "sneha.iyer@sample.io",
+      "password": "SnehaPass789!",
+      "age": 27,
+      "role": "user"
+    },
+    {
+      "name": "Karan Verma",
+      "email": "karan.verma@company.com",
+      "password": "KaranPass@2025",
+      "age": 31,
+      "role": "guest"
+    },
+    {
+      "name": "",
+      "email": "invalid-email",
+      "password": "123",
+      "age": -3,
+      "role": "user",
+      "comment": "Invalid user - empty name, malformed email, weak password, negative age"
+    },
+    {
+      "name": "Divya Reddy",
+      "email": "divya@missingdot",
+      "password": "StrongPass123!",
+      "age": 24,
+      "role": "user",
+      "comment": "Invalid user - email missing '.' in domain"
+    },
+    {
+      "name": "Amit Joshi",
+      "email": "amit.joshi@valid.com",
+      "password": "weak",
+      "age": 33,
+      "role": "admin",
+      "comment": "Invalid user - password too short"
+    },
+    {
+      "name": "Lakshmi Rao",
+      "email": "lakshmi.rao@example.com",
+      "password": "LakshmiPass2025#",
+      "age": 180,
+      "role": "user",
+      "comment": "Invalid user - unrealistic age"
+    },
+    {   
+      "name": "Vikram Singh",
+      "email": "no-at-symbol.com",
+      "password": "Vikram@Pass123",
+      "age": 28,
+      "role": "moderator",
+      "comment": "Invalid user - email missing '@' symbol"
+    }
+  ],
+  "test_scenarios": {
+    "valid_users": 5,
+    "invalid_users": 5,
+    "total_users": 10
+  },
+  "validation_rules": {
+    "name": "Must be non-empty string",
+    "email": "Must contain @ and . symbols with proper format",
+    "password": "Must be at least 8 characters (warning if shorter)",
+    "age": "Must be integer between 0 and 150",
+    "role": "String value for user role"
+  }
+}

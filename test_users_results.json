@@ -1,0 +1,171 @@
+{
+  "timestamp": "2025-07-30T11:39:53.383059",
+  "total_users": 10,
+  "test_results": [],
+  "user_validations": [
+    {
+      "user": {
+        "name": "Rahul Sharma",
+        "email": "rahul.sharma@example.com",
+        "password": "Rahul@1234",
+        "age": 29,
+        "role": "user",
+        "created_at": "2025-07-30T11:39:53.382798"
+      },
+      "validation": {
+        "is_valid": true,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "user": {
+        "name": "Priya Menon",
+        "email": "priya.menon@test.org",
+        "password": "PriyaSecure456#",
+        "age": 34,
+        "role": "admin",
+        "created_at": "2025-07-30T11:39:53.382802"
+      },
+      "validation": {
+        "is_valid": true,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "user": {
+        "name": "Arjun Patel",
+        "email": "arjun.patel@demo.net",
+        "password": "Arjun_2024$",
+        "age": 40,
+        "role": "moderator",
+        "created_at": "2025-07-30T11:39:53.382803"
+      },
+      "validation": {
+        "is_valid": true,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "user": {
+        "name": "Sneha Iyer",
+        "email": "sneha.iyer@sample.io",
+        "password": "SnehaPass789!",
+        "age": 27,
+        "role": "user",
+        "created_at": "2025-07-30T11:39:53.382804"
+      },
+      "validation": {
+        "is_valid": true,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "user": {
+        "name": "Karan Verma",
+        "email": "karan.verma@company.com",
+        "password": "KaranPass@2025",
+        "age": 31,
+        "role": "guest",
+        "created_at": "2025-07-30T11:39:53.382805"
+      },
+      "validation": {
+        "is_valid": true,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "user": {
+        "name": "",
+        "email": "invalid-email",
+        "password": "123",
+        "age": -3,
+        "role": "user",
+        "created_at": "2025-07-30T11:39:53.382806"
+      },
+      "validation": {
+        "is_valid": false,
+        "errors": [
+          "Name is required",
+          "Invalid email format",
+          "Invalid age value"
+        ],
+        "warnings": [
+          "Password should be at least 8 characters long"
+        ]
+      }
+    },
+    {
+      "user": {
+        "name": "Divya Reddy",
+        "email": "divya@missingdot",
+        "password": "StrongPass123!",
+        "age": 24,
+        "role": "user",
+        "created_at": "2025-07-30T11:39:53.382808"
+      },
+      "validation": {
+        "is_valid": false,
+        "errors": [
+          "Invalid email format"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "user": {
+        "name": "Amit Joshi",
+        "email": "amit.joshi@valid.com",
+        "password": "weak",
+        "age": 33,
+        "role": "admin",
+        "created_at": "2025-07-30T11:39:53.382808"
+      },
+      "validation": {
+        "is_valid": true,
+        "errors": [],
+        "warnings": [
+          "Password should be at least 8 characters long"
+        ]
+      }
+    },
+    {
+      "user": {
+        "name": "Lakshmi Rao",
+        "email": "lakshmi.rao@example.com",
+        "password": "LakshmiPass2025#",
+        "age": 180,
+        "role": "user",
+        "created_at": "2025-07-30T11:39:53.382809"
+      },
+      "validation": {
+        "is_valid": false,
+        "errors": [
+          "Invalid age value"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "user": {
+        "name": "Vikram Singh",
+        "email": "no-at-symbol.com",
+        "password": "Vikram@Pass123",
+        "age": 28,
+        "role": "moderator",
+        "created_at": "2025-07-30T11:39:53.382810"
+      },
+      "validation": {
+        "is_valid": false,
+        "errors": [
+          "Invalid email format"
+        ],
+        "warnings": []
+      }
+    }
+  ]
+}
